@@ -4,6 +4,8 @@ class PlantsController < ApplicationController
         render json: plants, status: :ok
     end
 
+#How to do show
+
     def show
         
         plants = Plant.find_by(id:params[:id])
